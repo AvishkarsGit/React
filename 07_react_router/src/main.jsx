@@ -14,6 +14,7 @@ import { Contact } from "./pages/Contact.jsx";
 import { User } from "./pages/User.jsx";
 import { Github } from "./pages/Github.jsx";
 import { getLoaderData } from "./services/ApiServices.js";
+import { Login } from "./pages/Login.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<Home />} />
+      <Route path="/login" element={<Login />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="user/:id" element={<User />} />

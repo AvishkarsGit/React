@@ -2,13 +2,16 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { UserContextProvider } from "./context/UserContextProvider";
 
 function App() {
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      <UserContextProvider>
+        <Header />
+        <Outlet />
+        <Footer />
+      </UserContextProvider>
     </>
   );
 }
