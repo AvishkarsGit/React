@@ -4,10 +4,13 @@ import { useState } from "react";
 function App() {
   const [color, setColor] = useState("white");
 
+
+
   return (
     <div
       className="w-full h-screen duration-200 p-4"
       style={{ backgroundColor: color }}
+
     >
       <div className="border-[2px] border-white rounded-2xl bg-black p-2 flex items-center justify-center gap-5">
         <button
